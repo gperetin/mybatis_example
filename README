@@ -1,0 +1,23 @@
+DESCRIPTION
+===========
+This is example project that demonstrates use of MyBatis data mapper framework.
+Example is using XML to define mappings, I find it less readable when 
+using annotations, but feel free to change this.
+
+The program simply persists an entity (Person) to database and then fetches it from database.
+
+Only thing you need to do to run this example is to setup a database.
+This example assumes following:
+- PostgreSQL database installed on localhost and listening on port 5432
+- Database named mybatis_test
+- user "mybatis" with password "mybatis" (without the quotes) with read/write 
+	permissions on mybatis_test database
+
+You can configure your own setup in mybatis-config.xml file.
+
+TODO
+===========
+- Integrate with DI container (Guice)
+- Use Guice's transaction management
+- Use DI to get SqlSessionFactory
+- Move DB configuration out of mybatis-config.xml (use ConnectionPool provided by Application Server)
