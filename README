@@ -14,10 +14,3 @@ This example assumes following:
 	permissions on mybatis_test database
 
 You can configure your own setup in mybatis-config.xml file.
-
-TODO
-===========
-- Integrate with DI container (Guice)
-- Use Guice's transaction management
-- Use DI to get SqlSessionFactory
-- Move DB configuration out of mybatis-config.xml (use ConnectionPool provided by Application Server)
